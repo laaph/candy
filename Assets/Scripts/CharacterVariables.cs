@@ -17,11 +17,11 @@ public class CharacterVariables : MonoBehaviour {
 
 	public float moveSpeed    = 1f;
 
-	public bool  isAttacking  = 0;
+	public bool  isAttacking  = false;
 		
 	// Use this for initialization
 	void Start () {
-		isAttacking = 0;
+		isAttacking = false;
 	}
 	
 	// Update is called once per frame
