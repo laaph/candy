@@ -6,9 +6,11 @@ public class Spawner : MonoBehaviour {
 	public GameObject CreepPrefab;
 	public float SpawnRate;			// spawn a creep once evey this many seconds
 	public int NumCreepsSpawned;
+	public int MaxCreepsSpawned;
 	//public UILabel LabelCreepsSpawned;
 	private float _spawnInterval;				// time since last spawn
 	private bool _isActive;
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +22,7 @@ public class Spawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (_isActive)
+		if (_isActive && NumCreepsSpawned < MaxCreepsSpawned)
 		{
 			_spawnInterval = _spawnInterval + Time.deltaTime;
 			if (_spawnInterval >= SpawnRate)
