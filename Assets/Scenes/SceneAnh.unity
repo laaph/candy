@@ -85,7 +85,7 @@ GameObject:
   - 212: {fileID: 88526355}
   - 61: {fileID: 88526356}
   m_Layer: 0
-  m_Name: WeaponHitBox
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +148,7 @@ GameObject:
   - 4: {fileID: 398117506}
   - 212: {fileID: 398117505}
   - 58: {fileID: 398117504}
+  - 114: {fileID: 398117507}
   m_Layer: 0
   m_Name: PlayerAnhVer
   m_TagString: Untagged
@@ -173,7 +174,7 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1022220559}
   m_GameObject: {fileID: 398117503}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -202,6 +203,20 @@ Transform:
   m_Children:
   - {fileID: 88526354}
   m_Father: {fileID: 0}
+--- !u!114 &398117507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 398117503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15765a49ee4f834cb2e6a6b79bd7a08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: .25
+  whichPlayer: 1
+  attackArc: 90
 --- !u!1001 &574366120
 Prefab:
   m_ObjectHideFlags: 0
@@ -277,6 +292,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 4c1e3a6072844584ebe2916acea559d5, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c1e3a6072844584ebe2916acea559d5, type: 2}
   m_RootGameObject: {fileID: 88526353}
@@ -319,7 +338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 1ecbb5c86fa95a74b8a7ef93321c704c, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ecbb5c86fa95a74b8a7ef93321c704c, type: 2}
