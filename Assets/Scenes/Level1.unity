@@ -462,7 +462,6 @@ GameObject:
   - 54: {fileID: 886948417}
   - 114: {fileID: 886948416}
   - 114: {fileID: 886948415}
-  - 114: {fileID: 886948422}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Target
@@ -569,19 +568,6 @@ Transform:
   - {fileID: 1830214980}
   - {fileID: 1724152919}
   m_Father: {fileID: 0}
---- !u!114 &886948422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: b8d2e4752f76b5a49a92fc5a530ec32a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1409464743}
-  m_GameObject: {fileID: 886948414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f15765a49ee4f834cb2e6a6b79bd7a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSpeed: 1.20000005
 --- !u!1 &950024360
 GameObject:
   m_ObjectHideFlags: 0

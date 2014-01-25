@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab2fdfd710707144947c5082782f79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistToTarget: 18
+  maxDistToTarget: 30
   TargetTag: Target
 --- !u!114 &11400010
 MonoBehaviour:
