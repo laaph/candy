@@ -19,7 +19,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   m_Layer: 0
-  m_Name: Actor_Wander
+  m_Name: Creep
   m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

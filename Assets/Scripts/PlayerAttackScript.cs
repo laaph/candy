@@ -30,7 +30,7 @@ public class PlayerAttackScript : MonoBehaviour {
 
 		// Not sure what you aer doing here, let me know if I should add another button input.
 
-        attackPressed |= Input.GetButtonDown("Fire2");
+        //attackPressed |= Input.GetButtonDown("Fire2");
         
         if (attackPressed && cooldown <= 0f) {
             // to do
