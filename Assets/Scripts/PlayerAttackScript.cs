@@ -24,7 +24,7 @@ public class PlayerAttackScript : MonoBehaviour {
     {
         get
         {
-            return shootCooldown <= 0f;
+            return cooldown <= 0f;  // Whoever wrote this - don't check in broken code!
         }
     }
 
