@@ -1,0 +1,12 @@
+{
+	"publisher_id": 0,
+	"publisher_package_id": 972,
+	"title": "SimplePath",
+	"description": "SimplePath provides lightning fast pathfinding for any type of terrain. This package contains everything you need to get your agents moving in game.  SimplePath supports all Unity platforms, and has been tested for deployment on Web, PC, Mac, iPhone, and Android.\n\n<br><br><a href=\"http://www.youtube.com/watch?v=sTb59eKp6qM\">Demo Video</a>\n<br><a href=\"http://www.alexkring.com/SimplePath/SimplePath.pdf\">User's Manual</a>\n<br><a href=\"http://forum.unity3d.com/threads/89712-SimplePath-Advanced-Pathfinding-for-any-Game-Genre-RELEASED\">Official Forum Thread</a>\n",
+	"changes": "1.1\n---------------------------------------------------------------------------------------------------\n- Video of new features in 1.1: www.youtube.com/watch?v=Nfu70lakPSM\n- Pathfinding on uneven terrain\n- ~10x speed increase in pathfinding\n- Footprint scaling\n- Several minor API changes\n\n1.11\n---------------------------------------------------------------------------------------------------\n- Fixed android and iphone compatability issues with 1.1.\n- Added an IHeightmap interface, for defining your own heightmap that interfaces with SimplePath.",
+	"version_name": "1.11",
+	"category": 2,
+	"price": "60",
+	"recommended_features": [],
+	"required_features": []
+}
