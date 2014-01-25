@@ -12,12 +12,13 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float   x = Input.GetAxis("Player1MoveHoriz") * movementSpeed;
-		float   y = Input.GetAxis("Player1MoveVert")  * movementSpeed;
+		float   x =  Input.GetAxis("Player1MoveHoriz") * movementSpeed;
+		float   y =  0; // For consistency
+		float   z =  Input.GetAxis("Player1MoveVert")  * movementSpeed;
 
 		//Debug.Log("x = " + x + " y = " + y);
 
-		Vector3 p = new Vector3(transform.position.x + x, transform.position.y + y, transform.position.z);
+		Vector3 p = new Vector3(transform.position.x + x, transform.position.y + y, transform.position.z + z);
 		transform.position = p;
 	}
 }
