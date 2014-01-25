@@ -74,9 +74,9 @@ public class MeleeAttack : MonoBehaviour {
 					{
 						nextAttack = Time.time + attackRate;
 						this.GetComponent<PathAgentComponent>().CancelActiveRequest();	// trying to fix MissingRefereneException
-						//curTarget.GetComponent<Character>().Hitpoints -= attackDamage;
-						//if (curTarget.GetComponent<Character>().Hitpoints <= 0)
-							Destroy (curTarget);
+						curTarget.GetComponent<CharacterVariables>().hp -= attackDamage;
+						//if (curTarget.GetComponent<CharacterVariables>().Hitpoints <= 0)
+							//Destroy (curTarget);
 						//Instantiate(damagePFX, curTarget.transform.position, Quaternion.identity);
 					}
 				}

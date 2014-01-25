@@ -46,6 +46,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Target
@@ -168,6 +169,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSpeed: 1.20000005
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a92ffef7a6cd45dab6f2f4e442de033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: 1
+  hp: 10
+  maxHp: 10
+  score: 0
+  attackDamage: 1
+  attackRadius: 1
+  attackArc: 25
+  attackSpeed: 1
+  moveSpeed: 1
+  isAttacking: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
