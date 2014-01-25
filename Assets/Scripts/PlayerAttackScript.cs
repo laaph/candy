@@ -1,38 +1,1 @@
-﻿using UnityEngine;
-
-public class PlayerAttackScript : MonoBehaviour {
-
-    public float AttackSpeed = 0.25f;
-    
-    // keeps track of current cooldown
-    private float cooldown;
-
-    void Start()
-    {
-        cooldown = 0f;
-    }
-    
-    void Update()
-    {
-        if (cooldown > 0)
-        {
-            cooldown -= Time.deltaTime;
-        }
-    }
-    
-    public bool CanAttack
-    {
-        get
-        {
-            return cooldown <= 0f;  // Whoever wrote this - don't check in broken code!
-        }
-    }
-
-    public void Attack() {
-        
-        if (CanAttack) { // based on cooldown
-            
-            //Transform attackTransform = Instantiate()
-        }
-    }
-}
+﻿using UnityEngine;public class PlayerAttackScript : MonoBehaviour {    // inspector variables    public float attackSpeed = 1.2f;    //public Transform         // keeps track of current cooldown    private float cooldown;    void Start() {        cooldown = 0f;    }        void Update() {                if (cooldown > 0) {            cooldown -= Time.deltaTime;        }                bool attackPressed = Input.GetButtonDown("Fire1");        attackPressed |= Input.GetButtonDown("Fire2");                if (attackPressed && cooldown <= 0f) {            // to do        }    }}
