@@ -3,20 +3,30 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float movementSpeed = 0.1f;
+	public float  movementSpeed = 0.1f;
+	public string playerNum = "1";
 	Vector3 oldPosition;
 
+	string moveHoriz;
+	string moveVert;
 	// Use this for initialization
 	void Start () {
+
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		// Temporarily put here so that live updating works - meant to be in Start()
+		moveHoriz = "Player" + playerNum + "MoveHoriz";
+		moveVert  = "Player" + playerNum + "MoveVert";
+
+
 		oldPosition = transform.position;
-		float   x =  Input.GetAxis("Player1MoveHoriz") * movementSpeed;
+		float   x =  Input.GetAxis(moveHoriz) * movementSpeed;
 		float   y =  0; // For consistency
-		float   z =  Input.GetAxis("Player1MoveVert")  * movementSpeed;
+		float   z =  Input.GetAxis(moveVert)  * movementSpeed;
 
 		// Debug.Log("x = " + x + " y = " + y);
 
