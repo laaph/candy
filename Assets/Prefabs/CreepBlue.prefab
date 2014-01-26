@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: CreepBlue
   m_TagString: Attacker
@@ -217,6 +218,7 @@ MonoBehaviour:
   m_debugGoalColor: {r: 1, g: 0, b: 0, a: 1}
   m_debugShowPath: 1
   m_debugShowVelocity: 0
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,6 +265,27 @@ MonoBehaviour:
   curTarget: {fileID: 0}
   m_replanInterval: .5
   damagePFX: {fileID: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5b2574884a44ea19f2c6084fe5c4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySprite: {fileID: 21200002}
+  sprites:
+  - {fileID: 21300014, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300008, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300002, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300010, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300012, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300006, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300004, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300000, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

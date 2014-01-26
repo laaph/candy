@@ -25,6 +25,7 @@ public class SteeringAgentComponent : MonoBehaviour
 	public Color									m_debugGoalColor = Color.red;
 	public bool										m_debugShowPath = true;
 	public bool										m_debugShowVelocity = false;
+	public Vector3 									velocity;
 	#endregion
 	
 	#region Fields
@@ -80,6 +81,7 @@ public class SteeringAgentComponent : MonoBehaviour
 			}
 			
 			rigidbody.velocity = newVelocity;
+			velocity = newVelocity;
 		}
 	}
 	
@@ -109,6 +111,7 @@ public class SteeringAgentComponent : MonoBehaviour
 		{
 			Gizmos.DrawRay(transform.position, rigidbody.velocity);
 		}
+
 	}
 	#endregion
 	
