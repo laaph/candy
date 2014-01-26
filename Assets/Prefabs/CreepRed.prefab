@@ -19,7 +19,7 @@ GameObject:
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Creep
+  m_Name: CreepRed
   m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
   m_Layer: 0
-  m_Name: blue_guy_0
+  m_Name: redBodySheet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
   m_Layer: 0
-  m_Name: blue_guy_1
+  m_Name: redHeadSheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.26065147, y: .5, z: .715047896}
+  m_LocalPosition: {x: -1.94514334, y: .5, z: -4.00952721}
   m_LocalScale: {x: .394849032, y: .419536889, z: .37654677}
   m_Children:
   - {fileID: 400002}
@@ -76,9 +76,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: .707014203, y: 0, z: 0, w: .707199395}
-  m_LocalPosition: {x: -.105734684, y: .0374122299, z: .0183269829}
-  m_LocalScale: {x: 2.53261352, y: 2.6557126, z: 2.38358068}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -.0174247976, y: .166396141, z: -2.63745189}
+  m_LocalScale: {x: 2.53261352, y: 2.95891237, z: 2.13933516}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!4 &400004
@@ -87,9 +87,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: .707105994, y: 0, z: 0, w: .707107604}
-  m_LocalPosition: {x: -.105734684, y: -.227291822, z: -2.8729732}
-  m_LocalScale: {x: 2.53261352, y: 2.38358068, z: 2.6557126}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -.0874717832, y: .783634007, z: -.288829923}
+  m_LocalScale: {x: 2.53261352, y: 2.95891237, z: 2.13933516}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!23 &2300000
@@ -145,8 +145,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.3900001, y: 4, z: 5.61000013}
-  m_Center: {x: -.200000003, y: 0, z: -1.91999996}
+  m_Size: {x: 3.25, y: 4, z: 5.53999996}
+  m_Center: {x: -.0199999996, y: 0, z: -1.91999996}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -269,7 +269,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: ccd854699660b47b9a1f98aea0dc3e11, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe2c2d537183b4b428086ad3e1e5c477, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
@@ -292,7 +292,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300002, guid: ccd854699660b47b9a1f98aea0dc3e11, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
