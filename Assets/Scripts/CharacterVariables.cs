@@ -12,9 +12,9 @@ public class CharacterVariables : MonoBehaviour {
 
 	public int   attackDamage   = 1;
 	public float attackRadius   = 1.0f;
-	public float attackArc      = 25f;
-	public float attackSpeed    = 1f;
-	public float attackCooldown = 0f;
+	public float attackArc      = 40f;
+	public float attackSpeed    = 200f;
+	public float attackCooldown = 0.5f;
 
 	public bool  isAttacking    = false;
 	
