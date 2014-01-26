@@ -54,21 +54,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 135
-        y: 367
+        y: 358
         width: 96
-        height: 88
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: redHeadSheet_2
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 358
-        width: 14
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: redHeadSheet_3
       rect:
         serializedVersion: 2
         x: 20
@@ -77,7 +68,7 @@ TextureImporter:
         height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: redHeadSheet_4
+    - name: redHeadSheet_3
       rect:
         serializedVersion: 2
         x: 137
@@ -86,7 +77,7 @@ TextureImporter:
         height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: redHeadSheet_5
+    - name: redHeadSheet_4
       rect:
         serializedVersion: 2
         x: 20
@@ -95,7 +86,7 @@ TextureImporter:
         height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: redHeadSheet_6
+    - name: redHeadSheet_5
       rect:
         serializedVersion: 2
         x: 136
@@ -104,7 +95,7 @@ TextureImporter:
         height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: redHeadSheet_7
+    - name: redHeadSheet_6
       rect:
         serializedVersion: 2
         x: 17
@@ -113,22 +104,13 @@ TextureImporter:
         height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: redHeadSheet_8
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 141
-        width: 11
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: redHeadSheet_9
+    - name: redHeadSheet_7
       rect:
         serializedVersion: 2
         x: 137
         y: 57
         width: 107
-        height: 79
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
