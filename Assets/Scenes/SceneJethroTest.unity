@@ -434,6 +434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 1715268923}
+  swordImage1: {fileID: 21300000, guid: 87ce099fa78954ce980f632a298aac73, type: 3}
+  swordImage2: {fileID: 21300002, guid: 87ce099fa78954ce980f632a298aac73, type: 3}
   swordNoises:
   - {fileID: 8300000, guid: 0d90e7cf597934542a830a7e90c81b31, type: 3}
   - {fileID: 8300000, guid: be084cd7b1c30407e99e08e1931315de, type: 3}
