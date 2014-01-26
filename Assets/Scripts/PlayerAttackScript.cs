@@ -83,14 +83,18 @@ public class PlayerAttackScript : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Attacker" && charVars.isAttacking)
 		{
-			if (this.GetComponent<CharacterVariables>().team == 1)
-				_gmScript.GetComponent<GameMaster>().Player1Score++;
-			else
-				_gmScript.GetComponent<GameMaster>().Player2Score++;
+			// players can't kill enemies of the same color as themselves
+			if (col.gameObject.GetComponent<CharacterVariables>().team == this.gameObject.GetComponent<CharacterVariables>().team)
+				return;
 
 			// play death PFX and SFX
 			col.gameObject.GetComponent<NavigationAgentComponent>().CancelActiveRequest();
 			Destroy(col.gameObject);
+
+			if (this.GetComponent<CharacterVariables>().team == 1)
+				_gmScript.GetComponent<GameMaster>().Player1Score++;
+			else
+				_gmScript.GetComponent<GameMaster>().Player2Score++;
 		}
 	}
 }
