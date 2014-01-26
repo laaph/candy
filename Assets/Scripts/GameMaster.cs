@@ -12,6 +12,9 @@ public class GameMaster : MonoBehaviour {
 	private GameObject Player2;
 	public int Player1Score;
 	public int Player2Score;
+	public AudioClip PlayerDeath;
+	public AudioClip CreepDeath;
+	public AudioClip PlayerHit;
 
 	// Use this for initialization
 	void Start () {
@@ -36,5 +39,10 @@ public class GameMaster : MonoBehaviour {
 			P2HP.text = Player2.GetComponent<CharacterVariables>().hp.ToString();
 			P2Score.text = Player2Score.ToString();
 		}
+	}
+
+	public void PlayCreepDeath()
+	{
+		audio.PlayOneShot(CreepDeath);
 	}
 }
