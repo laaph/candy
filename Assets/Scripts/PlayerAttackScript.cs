@@ -19,6 +19,7 @@ public class PlayerAttackScript : MonoBehaviour {
 	float attackArc;
 	public float currentAngle;
 	float attackSpeed;
+	private GameMaster _gmScript;
 
     void Start() {
 		charVars = gameObject.GetComponent<CharacterVariables>();
@@ -32,6 +33,8 @@ public class PlayerAttackScript : MonoBehaviour {
 		attackSpeed = charVars.attackSpeed;
 
 		sword.gameObject.SetActive(false);
+
+		_gmScript = GameObject.Find("GameMaster").GetComponent<GameMaster>();
     }
 
     void Update() {
@@ -75,4 +78,19 @@ public class PlayerAttackScript : MonoBehaviour {
 		audio.Play();
 
     }
+
+	void OnCollisionEnter (Collision col)
+	{
+		if (col.gameObject.tag == "Attacker" && charVars.isAttacking)
+		{
+			if (this.GetComponent<CharacterVariables>().team == 1)
+				_gmScript.GetComponent<GameMaster>().Player1Score++;
+			else
+				_gmScript.GetComponent<GameMaster>().Player2Score++;
+
+			// play death PFX and SFX
+			col.gameObject.GetComponent<NavigationAgentComponent>().CancelActiveRequest();
+			Destroy(col.gameObject);
+		}
+	}
 }
