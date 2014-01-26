@@ -22,7 +22,9 @@ public class GameMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		P1HP.text = Player1.GetComponent<CharacterVariables>().hp.ToString();
-		P2HP.text = Player2.GetComponent<CharacterVariables>().hp.ToString();
+		if (Player1)
+			P1HP.text = Player1.GetComponent<CharacterVariables>().hp.ToString();
+		if (Player2)
+			P2HP.text = Player2.GetComponent<CharacterVariables>().hp.ToString();
 	}
 }
