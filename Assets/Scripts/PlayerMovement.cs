@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour {
 	Vector3 oldPosition;
 	public Sprite[]  sprites;
 
+	public SpriteRenderer mySprite;
+
 	string moveHoriz;
 	string moveVert;
 
@@ -40,31 +42,34 @@ public class PlayerMovement : MonoBehaviour {
 		float   angle = Mathf.Atan2 (z, x) * (180f/Mathf.PI);  // Degrees will be easier to mentally handle
 
 		// The following could be done with a lot of math rather than these if/then checks.
-		float chunksize = 360/8; // 
+		float chunksize = 360/8;
+		int index = 0;
 		if(angle > -chunksize/2 && angle < chunksize / 2) {
-			GetComponent<SpriteRenderer>().sprite = sprites[0];
+			index = 0;
 		}
 		if(angle > 0.5 * chunksize && angle < 1.5 * chunksize) {
-			GetComponent<SpriteRenderer>().sprite = sprites[1];
+			index = 1;
 		}
 		if(angle > 1.5 * chunksize && angle < 2.5 * chunksize) {
-			GetComponent<SpriteRenderer>().sprite = sprites[2];
+			index = 2;
 		}
 		if((angle > 2.5 * chunksize) && (angle < 3.5 * chunksize)) {
-			GetComponent<SpriteRenderer>().sprite = sprites[3];
+			index = 3;
 		}
 		if((angle > 3.5 * chunksize) || (angle < -3.5 * chunksize)) {
-			GetComponent<SpriteRenderer>().sprite = sprites[4];
+			index = 4;
 		}
 		if(angle > -3.5 * chunksize && angle < -2.5 * chunksize) {
-			GetComponent<SpriteRenderer>().sprite = sprites[5];
+			index = 5;
 		}
 		if(angle > -2.5 * chunksize && angle < -1.5 * chunksize) {
-			GetComponent<SpriteRenderer>().sprite = sprites[6];
+			index = 6;
 		}
 		if(angle > -1.5 * chunksize && angle < -0.5 * chunksize) {
-			GetComponent<SpriteRenderer>().sprite = sprites[7];
+			index = 7;
 		}
+		mySprite.GetComponent<SpriteRenderer>().sprite = sprites[index];
+
 		
 		rigidbody.AddForce(x, y, z);
 	}

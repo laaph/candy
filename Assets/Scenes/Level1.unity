@@ -259,6 +259,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dac8e7cfdaf74cbbb2a9aa93dc12e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300014, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300008, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300002, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300010, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300012, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300006, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300004, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  - {fileID: 21300000, guid: 30c45e13a47274bfbaa0d814c0c62774, type: 3}
+  mySprite: {fileID: 1546544643}
 --- !u!114 &43259266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,6 +540,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dac8e7cfdaf74cbbb2a9aa93dc12e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300014, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300008, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300002, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300010, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300012, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300006, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300004, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300000, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  mySprite: {fileID: 1382999647}
 --- !u!114 &139137556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2822,11 +2842,11 @@ MonoBehaviour:
     e00: 360
     e01: 0
     e02: 0
-    e03: -9824.40723
+    e03: -9825.17188
     e10: 0
     e11: 360
     e12: 0
-    e13: -1.52866244
+    e13: 0
     e20: 0
     e21: 0
     e22: 360
@@ -2904,7 +2924,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999102143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.76423645, y: 1.52866244, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1733920992}
