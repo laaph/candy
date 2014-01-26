@@ -6,8 +6,8 @@ public class CharacterVariables : MonoBehaviour {
 	// Fill it out with reasonable defaults
 	public int team   = 1;
 
-	public int hp     = 10;
-	public int maxHp  = 10;
+	public int hp     = 9;
+	public int maxHp  = 9;
 	public int score  = 0;
 
 	public int   attackDamage   = 1;

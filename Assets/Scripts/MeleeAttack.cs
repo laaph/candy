@@ -19,11 +19,13 @@ public class MeleeAttack : MonoBehaviour {
 	private bool							m_bNavRequestCompleted;
 	
 	public GameObject damagePFX;
+	private GameMaster _gmScript;
 	
 	void Awake()
 	{
 		m_bNavRequestCompleted = true;
 		m_navigationAgent = GetComponent<NavigationAgentComponent>();
+		_gmScript = GameObject.Find("GameMaster").GetComponent<GameMaster>();
 	}
 	
 	void OnDrawGizmos() {
@@ -74,9 +76,7 @@ public class MeleeAttack : MonoBehaviour {
 						nextAttack = Time.time + attackRate;
 						this.GetComponent<PathAgentComponent>().CancelActiveRequest();	// trying to fix MissingRefereneException
 						curTarget.GetComponent<CharacterVariables>().hp -= attackDamage;
-						//if (curTarget.GetComponent<CharacterVariables>().Hitpoints <= 0)
-							//Destroy (curTarget);
-						//Instantiate(damagePFX, curTarget.transform.position, Quaternion.identity);
+						_gmScript.PlayPlayerHit();
 					}
 				}
 			}
