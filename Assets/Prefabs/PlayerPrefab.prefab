@@ -40,8 +40,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400004}
-  - 33: {fileID: 3300000}
-  - 23: {fileID: 2300000}
   - 65: {fileID: 6500000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
@@ -54,14 +52,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 212: {fileID: 21200004}
+  m_Layer: 0
+  m_Name: fishSwim2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: .707014203, y: 0, z: 0, w: .707199395}
-  m_LocalPosition: {x: -.105734684, y: .0374122299, z: .0183269829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.105735287, y: .0374150909, z: -1.44526637}
   m_LocalScale: {x: 2.53261352, y: 2.6557126, z: 2.38358068}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -71,8 +85,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: .707105994, y: 0, z: 0, w: .707107604}
-  m_LocalPosition: {x: -.105734684, y: -.227291822, z: -2.8729732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.105735287, y: -1.86086965, z: -.723306477}
   m_LocalScale: {x: 2.53261352, y: 2.38358068, z: 2.6557126}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -82,41 +96,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.90894556, y: .5, z: -1.73971701}
+  m_LocalRotation: {x: .707105994, y: 0, z: 0, w: .707107604}
+  m_LocalPosition: {x: -4.72236967, y: .867277145, z: -1.73971701}
   m_LocalScale: {x: .394849032, y: .419536889, z: .37654677}
   m_Children:
   - {fileID: 400000}
   - {fileID: 400002}
+  - {fileID: 400006}
   m_Father: {fileID: 0}
---- !u!23 &2300000
-Renderer:
+--- !u!4 &400006
+Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: f6e35f8ebaff1c441a60098cf3c25632, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!33 &3300000
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.24094333e-06, z: -2.14255452}
+  m_LocalScale: {x: 2.53261352, y: 2.38358068, z: 2.6557126}
+  m_Children: []
+  m_Father: {fileID: 400004}
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -125,7 +123,7 @@ Rigidbody:
   m_GameObject: {fileID: 100004}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: .0500000007
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -155,8 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dac8e7cfdaf74cbbb2a9aa93dc12e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: .100000001
-  playerNum: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -168,7 +164,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15765a49ee4f834cb2e6a6b79bd7a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 1.20000005
+  sword: {fileID: 400006}
+  cooldown: 0
+  startingAngle: 0
+  endingAngle: 0
+  currentAngle: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,10 +186,11 @@ MonoBehaviour:
   score: 0
   attackDamage: 1
   attackRadius: 1
-  attackArc: 25
-  attackSpeed: 1
-  moveSpeed: 1
+  attackArc: 40
+  attackSpeed: 200
+  attackCooldown: .5
   isAttacking: 0
+  moveSpeed: 120
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -235,6 +236,29 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300002, guid: ccd854699660b47b9a1f98aea0dc3e11, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21200004
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e7f31f83a50e0ab4b9230e5ca80a2ff8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
