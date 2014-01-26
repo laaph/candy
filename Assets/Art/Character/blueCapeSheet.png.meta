@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18df4f195afab4c5b8ef24228eb6c6d3
+guid: ccf17b47a13164f0a8cd7a7c04a27200
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -30,7 +30,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -40,6 +40,33 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: blueCapeSheet_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 57
+        width: 133
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: blueCapeSheet_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 56
+        width: 125
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: blueCapeSheet_2
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 58
+        width: 134
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
