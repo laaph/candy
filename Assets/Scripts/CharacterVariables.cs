@@ -27,7 +27,7 @@ public class CharacterVariables : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(hp < 0) {
+		if(hp <= 0) {
 			DeathRattle();
 		}
 	}

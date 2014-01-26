@@ -125,8 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dac8e7cfdaf74cbbb2a9aa93dc12e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 120
-  playerNum: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,8 +157,9 @@ MonoBehaviour:
   attackRadius: 1
   attackArc: 25
   attackSpeed: 1
-  moveSpeed: 1
+  attackCooldown: .5
   isAttacking: 0
+  moveSpeed: 120
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
