@@ -40,7 +40,6 @@ public class MeleeAttack : MonoBehaviour {
 			if (curTarget != null)
 			{
 				hasTarget = true;
-				curTarget.renderer.material.color = Color.red;
 			}
 		}
 		
@@ -89,6 +88,13 @@ public class MeleeAttack : MonoBehaviour {
 		if (col.gameObject == curTarget)
 		{
 			isAttacking = true;
+		}
+	}
+	void OnCollisionExit (Collision col)
+	{
+		if (col.gameObject == curTarget)
+		{
+			isAttacking = false;
 		}
 	}
 	

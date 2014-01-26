@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: .100000001
+  playerNum: 1
 --- !u!60 &533943300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
