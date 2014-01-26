@@ -6,6 +6,9 @@ public class PlayerAttackScript : MonoBehaviour {
 
     CharacterVariables charVars;
 
+	public AudioClip[] swordNoises;
+
+	// The following are set to public so I can watch them in the inspector
 	public float cooldown; // keeps track of current cooldown
     
 	string horizInputString = "Player1ShootHoriz";    // input strings based on player number
@@ -18,7 +21,6 @@ public class PlayerAttackScript : MonoBehaviour {
 	float attackSpeed;
 
     void Start() {
-
 		charVars = gameObject.GetComponent<CharacterVariables>();
 		cooldown = charVars.attackCooldown;
 
@@ -70,6 +72,7 @@ public class PlayerAttackScript : MonoBehaviour {
 		currentAngle = startingAngle;
 		sword.localEulerAngles = new Vector3(0, 0, startingAngle);
 		sword.gameObject.SetActive(true);
+		audio.Play();
 
     }
 }
