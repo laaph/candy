@@ -302,7 +302,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: ccd854699660b47b9a1f98aea0dc3e11, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &533943298
 Transform:
@@ -327,6 +327,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dac8e7cfdaf74cbbb2a9aa93dc12e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300014, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300008, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300002, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300010, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300012, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300006, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300004, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
+  - {fileID: 21300000, guid: 652154da371ce43b386c32ba685fbaad, type: 3}
 --- !u!54 &533943300
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -418,7 +427,7 @@ MonoBehaviour:
   attackDamage: 1
   attackRadius: 1
   attackArc: 40
-  attackSpeed: 200
+  attackSpeed: 100
   attackCooldown: .5
   isAttacking: 0
   moveSpeed: 120
@@ -434,8 +443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 1715268923}
-  swordImage1: {fileID: 21300000, guid: 87ce099fa78954ce980f632a298aac73, type: 3}
-  swordImage2: {fileID: 21300002, guid: 87ce099fa78954ce980f632a298aac73, type: 3}
   swordNoises:
   - {fileID: 8300000, guid: 0d90e7cf597934542a830a7e90c81b31, type: 3}
   - {fileID: 8300000, guid: be084cd7b1c30407e99e08e1931315de, type: 3}
