@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 30c45e13a47274bfbaa0d814c0c62774
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: redHeadSheet_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 363
+        width: 98
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 367
+        width: 96
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 358
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 260
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 257
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 160
+        width: 97
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 160
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 57
+        width: 113
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 141
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: redHeadSheet_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 57
+        width: 107
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
