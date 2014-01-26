@@ -88,6 +88,7 @@ public class PlayerAttackScript : MonoBehaviour {
 				return;
 
 			// play death PFX and SFX
+			_gmScript.PlayCreepDeath();
 			col.gameObject.GetComponent<NavigationAgentComponent>().CancelActiveRequest();
 			Destroy(col.gameObject);
 
