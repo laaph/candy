@@ -2301,6 +2301,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1486387029}
   - 212: {fileID: 1486387030}
+  - 95: {fileID: 1486387031}
   m_Layer: 0
   m_Name: redBodySheet
   m_TagString: Untagged
@@ -2342,6 +2343,20 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: fe2c2d537183b4b428086ad3e1e5c477, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &1486387031
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486387028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a08c69a0300794d199ea38939a38455d, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1487231321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,6 +2366,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1487231322}
   - 212: {fileID: 1487231323}
+  - 95: {fileID: 1487231324}
   m_Layer: 0
   m_Name: blueBodySheet
   m_TagString: Untagged
@@ -2393,6 +2409,20 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 18df4f195afab4c5b8ef24228eb6c6d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &1487231324
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1487231321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9023e43d49314f45bce6352a3b6f397, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1532788204
 GameObject:
   m_ObjectHideFlags: 0
