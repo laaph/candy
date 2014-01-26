@@ -93,9 +93,15 @@ public class PlayerAttackScript : MonoBehaviour {
 			Destroy(col.gameObject);
 
 			if (this.GetComponent<CharacterVariables>().team == 1)
-				_gmScript.GetComponent<GameMaster>().Player1Score++;
+				_gmScript.Player1Score++;
 			else
-				_gmScript.GetComponent<GameMaster>().Player2Score++;
+				_gmScript.Player2Score++;
+		}
+		// permit players to hurt each other
+		if (col.gameObject.tag == "Target" && charVars.isAttacking)
+		{
+			_gmScript.PlayPlayerHit();
+			col.gameObject.GetComponent<CharacterVariables>().hp -= 1;	// hardcoded to 1 damage in PvP
 		}
 	}
 }

@@ -38,30 +38,32 @@ public class GameMaster : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Player1) {
-			//P1HP.text = Player1.GetComponent<CharacterVariables>().hp.ToString();
-			//P1Score.text = Player1Score.ToString();
 			if (Player1.GetComponent<CharacterVariables>().hp == 6)
 				P1Heart3.SetActive(false);
 			if (Player1.GetComponent<CharacterVariables>().hp == 3)
 				P1Heart2.SetActive(false);
 			if (Player1.GetComponent<CharacterVariables>().hp == 0)
 				P1Heart1.SetActive(false);
+			P1Score.text = Player1Score.ToString();
 		}
 		if (Player2) {
-			//P2HP.text = Player2.GetComponent<CharacterVariables>().hp.ToString();
-			//P2Score.text = Player2Score.ToString();
 			if (Player2.GetComponent<CharacterVariables>().hp == 6)
 				P2Heart3.SetActive(false);
 			if (Player2.GetComponent<CharacterVariables>().hp == 3)
 				P2Heart2.SetActive(false);
 			if (Player2.GetComponent<CharacterVariables>().hp == 0)
 				P2Heart1.SetActive(false);
+			P2Score.text = Player2Score.ToString();
 		}
 	}
 
 	public void PlayCreepDeath()
 	{
 		audio.PlayOneShot(CreepDeath);
+	}
+	public void PlayPlayerDeath()
+	{
+		audio.PlayOneShot(PlayerDeath);
 	}
 	public void PlayPlayerHit()
 	{

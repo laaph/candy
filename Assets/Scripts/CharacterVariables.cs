@@ -19,10 +19,12 @@ public class CharacterVariables : MonoBehaviour {
 	public bool  isAttacking    = false;
 	
 	public float moveSpeed      = 1f;
+	private GameMaster _gmScript;
 			
 	// Use this for initialization
 	void Start () {
 		isAttacking = false;
+		_gmScript = GameObject.Find("GameMaster").GetComponent<GameMaster>();
 	}
 	
 	// Update is called once per frame
@@ -33,7 +35,7 @@ public class CharacterVariables : MonoBehaviour {
 	}
 
 	void DeathRattle() {
+		_gmScript.PlayPlayerDeath();
 		DestroyObject(gameObject);
-		// We will want to do animations, sounds, and respawn here
 	}
 }
