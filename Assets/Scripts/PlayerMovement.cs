@@ -24,6 +24,11 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if(charScript.isAttacking) {
+			// We can't move if we are attacking
+			return;
+		}
+
 		oldPosition = transform.position;
 		float   x =  Input.GetAxis(moveHoriz) * movementSpeed;
 		float   y =  0; // For consistency
