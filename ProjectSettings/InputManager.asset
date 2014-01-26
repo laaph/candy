@@ -49,9 +49,9 @@ InputManager:
     sensitivity: 3
     snap: 1
     invert: 0
-    type: 0
-    axis: 0
-    joyNum: 2
+    type: 2
+    axis: 2
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Player1ShootVert
     descriptiveName: 
@@ -64,10 +64,10 @@ InputManager:
     dead: .00100000005
     sensitivity: 3
     snap: 1
-    invert: 0
-    type: 0
-    axis: 1
-    joyNum: 4
+    invert: 1
+    type: 2
+    axis: 3
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Player1Fire
     descriptiveName: 
@@ -144,7 +144,7 @@ InputManager:
     dead: .300000012
     sensitivity: 3
     snap: 1
-    invert: 0
+    invert: 1
     type: 2
     axis: 3
     joyNum: 2
