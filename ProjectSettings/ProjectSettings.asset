@@ -10,8 +10,8 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: candy
+  companyName: Paranormal Games
+  productName: Ghost Stabber
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -110,9 +110,12 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: ccd854699660b47b9a1f98aea0dc3e11, type: 3}
       m_Size: 128
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiRegion: 1
